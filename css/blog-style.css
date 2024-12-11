@@ -1,0 +1,132 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f9fd;
+    color: #333;
+    line-height: 1.6;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    overflow-x: hidden;
+}
+
+body::-webkit-scrollbar {
+    display: none;
+}
+
+.blog-head {
+    height: 15vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #2596be;
+    color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.blog-head h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+nav {
+    background-color: #00658a;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.nav-menu {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 10px 0;
+}
+
+.nav-menu li{
+    list-style: none;
+}
+
+.nav-menu-link {
+    margin: 5px;
+    width: 120px;
+    text-align: center;
+}
+
+.nav-menu-link a {
+    font-weight: bold;
+    font-size: 1rem;
+    color: white;
+    padding: 10px;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+}
+
+.nav-menu-link a:hover {
+    background-color: #2596be;
+    color: white;
+    transform: scale(1.1);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+}
+
+.frame-pages {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0;
+    padding: 10px;
+}
+
+.frame-pages iframe {
+    width: 100%;
+    max-width: 1200px;
+    height: 500px;
+    /* border: 2px solid #00658a; */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+@media screen and (max-width: 750px) {
+    .blog-head h1 {
+        font-size: 2rem;
+    }
+
+    .nav-menu-link {
+        width: 100px;
+    }
+
+    .nav-menu-link a {
+        font-size: 0.9rem;
+        padding: 8px;
+    }
+
+    .frame-pages iframe {
+        height: 400px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .nav-menu {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .nav-menu-link {
+        width: 100%;
+        margin: 5px 0;
+    }
+
+    .nav-menu-link a {
+        font-size: 0.85rem;
+        padding: 8px;
+    }
+
+    .frame-pages iframe {
+        height: 350px;
+    }
+}

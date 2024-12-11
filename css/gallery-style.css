@@ -1,0 +1,110 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f9fd;
+    color: #333;
+    line-height: 1.6;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    overflow-x: hidden;
+}
+
+body::-webkit-scrollbar{
+    display: none;
+}
+
+.gallery-head {
+    height: 25vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #2596be;
+    color: white;
+    text-shadow: 2px 2px #00658a;
+}
+
+.gallery-head h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+.gallery-table {
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+}
+
+table {
+    width: 90%;
+    border-collapse: collapse;
+    background-color: white;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+thead {
+    background-color: #00658a;
+    color: white;
+}
+
+th, td {
+    text-align: center;
+    padding: 15px;
+    border-bottom: 1px solid #ddd;
+}
+
+tbody tr:hover {
+    background-color: #e9f2f7;
+    transition: background-color 0.3s ease;
+}
+
+.name a {
+    color: #2596be;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.name a:hover {
+    color: #00658a;
+    text-decoration: underline;
+}
+
+.passport-img {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    border-radius: 50%;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    filter: blur(8px);
+}
+
+.passport-img:hover{
+    filter: blur(0px);
+}
+
+iframe {
+    border: none;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+@media screen and (max-width: 768px) {
+    table {
+        font-size: 14px;
+    }
+
+    th, td {
+        padding: 10px;
+    }
+
+    .gallery-head h1 {
+        font-size: 2rem;
+    }
+}

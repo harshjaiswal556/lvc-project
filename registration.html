@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <title>Live Virtual Class</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link rel="stylesheet" href="./css/reg-style.css">
+
+    </head>
+
+    <body>
+        <header class="reg-head">
+            <h1>Registration</h1>
+        </header>
+
+        <section class="container">
+            <article class="form">
+                <form action="https://localhost/link.php" method="post" name="form1">
+                    
+                    <article class="field-1">
+                            <label for="t1">Name</label>
+                            <input type="text" name="t1" id="t1" placeholder="Enter name">
+                    </article>
+                    <article class="field-1">
+                            <label for="e1">Email</label>
+                            <input type="email" name="e1" id="e1" placeholder="Enter email">
+                    </article>
+                    <article class="field-1">
+                        <article class="input">
+                            <label for="">Gender:</label>
+                            <div class="box">
+                                <input type="radio" name="r1" id="r1"> 
+                                <label for="r1" style="margin-bottom: 0px;">Male</label>
+                            </div>
+                            <div class="box">
+                                <input type="radio" name="r1" id="r1">
+                                <label for="r1" style="margin-bottom: 0px;">Female</label> 
+                            </div>
+                        </article>
+                    </article>
+                    <article class="field-1">
+                        <article class="input">
+                            <label for="s1">Select Courses</label>
+                            <select name="s1" id="s1">
+                                <option value="1">Python</option>
+                                <option value="2">C++</option>
+                                <option value="3">C#</option>
+                                <option value="4">Java</option>
+                            </select>
+                        </article>
+                    </article>
+                    <article class="field-1">
+                        <article class="input-hobbies">
+                            <label for="">Your Hobbies : </label>
+                            <div class="box">
+                                <input type="checkbox" name="check1" id="check1">
+                                <label for="check1" style="margin-bottom: 0px;">Music</label> 
+                            </div>
+                            <div class="box">
+                                <input type="checkbox" name="check2" id="check2">
+                                <label for="check2" style="margin-bottom: 0px;">Dance</label> 
+                            </div>
+                            <div class="box">
+                                <input type="checkbox" name="check3" id="check3">
+                                <label for="check3" style="margin-bottom: 0px;">Sports</label> 
+                            </div>
+                            <div class="box">
+                                <input type="checkbox" name="check4" id="check4">
+                                <label for="check4" style="margin-bottom: 0px;">Movies</label>
+                            </div>
+                        </article>
+                    </article>
+                    <article class="field-1">
+                        <label for="ta1">Remarks:</label>
+                    </article>
+                    <article class="field-1">
+                        <!-- <article class="input-remarks"> -->
+                            <textarea name="ta1" id="ta1" rows="5" cols="25"></textarea>
+                        <!-- </article> -->
+                    </article>
+                    <article class="field-1">
+                        <input type="submit" value="Submit">
+                    </article>
+                </form>
+            </article>
+        </section>
+    </body>
+</html>
