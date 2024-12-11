@@ -95,7 +95,7 @@ nav {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    padding: 20px;
+    padding: 5rem;
 }
 
 .left, .right {
@@ -129,9 +129,10 @@ nav {
 }
 
 iframe {
-    border: 2px solid #00658a;
-    border-radius: 10px;
-    width: 90%;
+    /* border: 2px solid #00658a;
+    border-radius: 10px; */
+    width: 100%;
+    border: none;
     height: 500px;
 }
 

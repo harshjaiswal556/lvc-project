@@ -7,10 +7,76 @@
 
         <link rel="stylesheet" href="./css/style1.css">
 
+        <style>
+            body {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            line-height: 1.6rem;
+            overflow-x: hidden;
+        }
+
+        body::-webkit-scrollbar{
+            overflow:scroll;
+        }
+
+        .about-head {
+            height: 25vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #2596be;
+            color: white;
+            text-shadow: 2px 2px #00658a;
+        }
+
+        .about-head h1 {
+            font-size: 2.5rem;
+            font-weight: bold;
+        }
+        h2{
+            margin-top: 2.5rem;
+            margin-bottom: 1.5rem;
+        }
+        section {
+            padding: 5rem;
+        }
+        .about-footer{
+            margin-top: 1.5rem;
+            font-weight: 600;
+            color: #00658a;
+        }
+        </style>
+    
     </head>
-
+    
     <body>
-
-        <h1>About Us</h1>
+        <header class="about-head">
+            <h1>About Us</h1>
+        </header>
+        <section>
+            <p>
+                Welcome to Live Virtual Class, where learning knows no boundaries. Our mission is to provide high-quality education through live virtual classes, making learning accessible, engaging, and effective for everyone, everywhere.
+            </p>
+            <h2>Our Story</h2>
+            <p>
+                Founded with a vision to revolutionize education, [Your Website Name] brings together a team of passionate educators, industry experts, and tech enthusiasts. We believe that learning should be a continuous journey, and our platform is designed to support learners at every stage of their educational and professional development.
+            </p>
+            <h2>What We Offer</h2>
+            <ol style="padding-left: 15px;">
+                <li><b>Live Interactive Classes: </b>Our live sessions are designed to replicate the traditional classroom experience, allowing students to interact with instructors and peers in real-time.</li>
+                <li><b>Expert Instructors: </b>We collaborate with top educators and professionals who bring a wealth of knowledge and practical experience to our courses.</li>
+                <li><b>Flexible Learning:  </b>With our flexible scheduling and diverse course offerings, you can learn at your own pace and convenience.</li>
+            </ol>
+            <h2>Our Mission</h2>
+            <p>At Live Virtual Class, our mission is to democratize education by providing high-quality, accessible, and affordable learning opportunities. We are committed to fostering a supportive and inclusive learning environment where every learner can thrive.</p>
+            <h2>Why Choose Us?</h2>
+            <ol style="padding-left: 15px;">
+                <li><b>Innovative Technology: </b>We leverage the latest technology to deliver a seamless and immersive learning experience.</li>
+                <li><b>Personalized Support: </b>Our dedicated support team is here to assist you every step of the way, ensuring you have the best possible learning experience.</li>
+                <li><b>Commitment to Excellence: </b>We strive for excellence in everything we do, from our course content to our customer service.</li>
+            </ol>
+            <p class="about-footer">Join us at Live Virtual Class and be a part of a learning revolution. Together, we can achieve great things!</p>
+        </section>
     </body>
 </html>

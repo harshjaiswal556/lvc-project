@@ -20,7 +20,7 @@ body::-webkit-scrollbar {
 }
 
 .blog-head {
-    height: 15vh;
+    height: 25vh;
     display: flex;
     justify-content: center;
     align-items: center;

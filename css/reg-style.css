@@ -37,7 +37,7 @@ body::-webkit-scrollbar{
     width: 100%;
     display: flex;
     justify-content: center;
-    padding: 20px;
+    padding: 5rem;
 }
 
 .form {
