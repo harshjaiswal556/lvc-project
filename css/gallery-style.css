@@ -21,11 +21,7 @@ body::-webkit-scrollbar{
 
 .gallery-head {
     height: 25vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     background-color: #2596be;
-    color: white;
     text-shadow: 2px 2px #00658a;
 }
 
@@ -52,12 +48,6 @@ table {
 thead {
     background-color: #00658a;
     color: white;
-}
-
-th, td {
-    text-align: center;
-    padding: 15px;
-    border-bottom: 1px solid #ddd;
 }
 
 tbody tr:hover {

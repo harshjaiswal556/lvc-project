@@ -6,8 +6,8 @@
 
 body {
     font-family: Arial, sans-serif;
-    background-color: #f4f9fd;
     color: #333;
+    background-color: #f4f9fd;
     line-height: 1.6;
     margin: 0;
     padding: 0;
@@ -75,6 +75,8 @@ nav {
     justify-content: space-around;
     list-style: none;
     flex-wrap: wrap;
+    margin-bottom: 0px;
+    padding-left: 0px;
 }
 
 .nav-menu-link a {
@@ -136,6 +138,11 @@ iframe {
     height: 500px;
 }
 
+a p{
+    margin-top: 10px;
+    margin-bottom: 0px;
+}
+
 .courses {
     background-color: #eef7fc;
     padding: 20px 10vw;
@@ -192,7 +199,7 @@ footer {
     color: white;
     text-align: center;
     padding: 15px;
-    font-size: 0.9rem;
+    /* font-size: 0.9rem; */
 }
 
 .footer-content {

@@ -25,6 +25,7 @@ body::-webkit-scrollbar {
     justify-content: center;
     align-items: center;
     background-color: #2596be;
+    text-shadow: 2px 2px #00658a;
     color: white;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
