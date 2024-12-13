@@ -58,12 +58,6 @@ body::-webkit-scrollbar{
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-.field-1 {
-    margin-bottom: 20px;
-    display: flex;
-    flex-direction: column;
-}
-
 label {
     margin-bottom: 8px;
     font-size: 1rem;
@@ -71,16 +65,6 @@ label {
     color: #2596be;
 }
 
-input[type="text"],
-input[type="email"],
-textarea {
-    width: 100%;
-    padding: 10px;
-    font-size: 1rem;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-    transition: all 0.3s ease;
-}
 
 input[type="text"]:focus,
 input[type="email"]:focus,
@@ -88,10 +72,6 @@ textarea:focus {
     border-color: #2596be;
     outline: none;
     box-shadow: 0 0 5px rgba(37, 149, 190, 0.5);
-}
-
-textarea {
-    resize: vertical;
 }
 
 input[type="submit"] {
