@@ -208,11 +208,11 @@ a p{
 }
 
 footer {
-    background-color: #2596be;
+    background-color: #0F4D61;
+    /* background-color: #2596be; */
     color: white;
     text-align: center;
     padding: 15px;
-    /* font-size: 0.9rem; */
 }
 
 .footer-content {
