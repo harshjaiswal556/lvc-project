@@ -36,43 +36,45 @@ body::-webkit-scrollbar {
     letter-spacing: 2px;
 }
 
-nav {
-    background-color: #00658a;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
 
-.nav-menu {
+.courses-list {
     display: flex;
-    justify-content: center;
     flex-wrap: wrap;
-    padding: 10px 0;
-}
-
-.nav-menu li{
+    justify-content: space-evenly;
+    gap: 15px;
     list-style: none;
+    font-size: x-large;
 }
 
-.nav-menu-link {
-    margin: 5px;
-    width: 120px;
-    text-align: center;
+.courses-list a{
+    color: #004c6c;
+    text-decoration: none;
 }
 
-.nav-menu-link a {
-    font-weight: bold;
-    font-size: 1rem;
+.courses-list a:hover{
     color: white;
-    padding: 10px;
-    border-radius: 8px;
+}
+
+.courses-list li {
+    background-color: #fff;
+    border: 2px solid #d6d6cd;
+    border-radius: 10px;
+    cursor: pointer;
+    font-weight: bold;
     transition: all 0.3s ease;
 }
 
-.nav-menu-link a:hover {
+.courses-list li:hover {
     background-color: #2596be;
     color: white;
-    transform: scale(1.1);
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
-    cursor: pointer;
+    border-color: #00658a;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.25);
+    transform: scale(1.02);
+}
+
+a p{
+    margin-bottom: 0px;
+    padding: 10px 20px;
 }
 
 .frame-pages {
@@ -87,7 +89,6 @@ nav {
     width: 100%;
     max-width: 1200px;
     height: 500px;
-    /* border: 2px solid #00658a; */
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
@@ -97,35 +98,12 @@ nav {
         font-size: 2rem;
     }
 
-    .nav-menu-link {
-        width: 100px;
-    }
-
-    .nav-menu-link a {
-        font-size: 0.9rem;
-        padding: 8px;
-    }
-
     .frame-pages iframe {
         height: 400px;
     }
 }
 
 @media screen and (max-width: 480px) {
-    .nav-menu {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .nav-menu-link {
-        width: 100%;
-        margin: 5px 0;
-    }
-
-    .nav-menu-link a {
-        font-size: 0.85rem;
-        padding: 8px;
-    }
 
     .frame-pages iframe {
         height: 350px;
