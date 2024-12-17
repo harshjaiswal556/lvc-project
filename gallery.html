@@ -8,12 +8,9 @@
     <link rel="stylesheet" href="./css/gallery-style.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.8.2/css/lightbox.min.css">
 
-    <style>
-        th, td{
-            border-bottom: 1px solid #ddd;
-        }
-    </style>
 </head>
 
 <body>
@@ -21,70 +18,23 @@
         <h1>Photo Gallery</h1>
     </header>
 
-    <section>
-        <article class="gallery-table">
-            <table>
-                <thead>
-                    <tr>
-                        <th class="text-center p-3">Name</th>
-                        <th class="text-center p-3">Designation</th>
-                        <th class="text-center p-3">Photo</th>
-                        <th class="text-center p-3">Video</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td class="name text-center align-middle p-3">
-                            <a href="https://media.geeksforgeeks.org/wp-content/uploads/20190616234019/Canvas.move_.mp4" target="video1">Harsh</a>
-                        </td>
-                        <td class="text-center align-middle p-3">SWE Trainee</td>
-                        <td class="text-center align-middle p-3">
-                            <img src="./images/img1.jpg" alt="Harsh's Photo" class="passport-img">
-                        </td>
-                        <td class="text-center align-middle p-3">
-                            <iframe frameborder="0" name="video1" width="100" height="100"></iframe>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td class="name text-center align-middle p-3">
-                            <a href="https://media.geeksforgeeks.org/wp-content/uploads/20190616234019/Canvas.move_.mp4" target="video2">Rohan</a>
-                        </td>
-                        <td class="text-center align-middle p-3">Delivery Head</td>
-                        <td class="text-center align-middle p-3">
-                            <img src="./images/img2.jpg" alt="Rohan's Photo" class="passport-img">
-                        </td>
-                        <td class="text-center align-middle p-3">
-                            <iframe frameborder="0" name="video2" width="100" height="100"></iframe>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td class="name text-center align-middle p-3">
-                            <a href="https://media.geeksforgeeks.org/wp-content/uploads/20190616234019/Canvas.move_.mp4" target="video3">Lina</a>
-                        </td>
-                        <td class="text-center align-middle p-3">HR</td>
-                        <td class="text-center align-middle p-3">
-                            <img src="./images/img3.jpg" alt="Lina's Photo" class="passport-img">
-                        </td>
-                        <td class="text-center align-middle p-3">
-                            <iframe frameborder="0" name="video3" width="100" height="100"></iframe>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td class="name text-center align-middle p-3">
-                            <a href="https://media.geeksforgeeks.org/wp-content/uploads/20190616234019/Canvas.move_.mp4" target="video4">Hitesh</a>
-                        </td>
-                        <td class="text-center align-middle p-3">SDE-II</td>
-                        <td class="text-center align-middle p-3">
-                            <img src="./images/img4.jpg" alt="Hitesh's Photo" class="passport-img">
-                        </td>
-                        <td class="text-center align-middle p-3">
-                            <iframe frameborder="0" name="video4" width="100" height="100"></iframe>
-                        </td>
-                    </tr>
-                </tbody>
-            </table>
-        </article>
-    </section>
+    <div class="photo-gallery">
+        <div class="container">
+            <div class="intro">
+                <h2 class="text-center">Lightbox Gallery</h2>
+            </div>
+            <div class="row photos">
+                <div class="col-sm-6 col-md-4 col-lg-3 item d-flex justify-content-center"><a href="./images/img1.jpg" data-lightbox="photos"><img src="./images/img1.jpg" height="100%"></a></div>
+                <div class="col-sm-6 col-md-4 col-lg-3 item d-flex justify-content-center"><a href="./images/img2.jpg" data-lightbox="photos"><img src="./images/img2.jpg" height="100%"></a></div>
+                <div class="col-sm-6 col-md-4 col-lg-3 item d-flex justify-content-center"><a href="./images/img3.jpg" data-lightbox="photos"><img src="./images/img3.jpg" height="100%"></a></div>
+                <div class="col-sm-6 col-md-4 col-lg-3 item d-flex justify-content-center"><a href="./images/img4.jpg" data-lightbox="photos"><img src="./images/img4.jpg" height="100%"></a></div>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.8.2/js/lightbox.min.js"></script>
+      
 
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
         integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
@@ -92,7 +42,6 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
         integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
         crossorigin="anonymous"></script>
-
 </body>
 
 </html>
