@@ -17,27 +17,55 @@
     </header>
     <main class="contact-container">
         <section class="container-left">
-            <iframe class="contact-us" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3887.6000537676073!2d77.68607057418862!3d12.997413114313682!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae16837f54dbc9%3A0xbed84d37fcf010ca!2sImpelsys!5e0!3m2!1sen!2sin!4v1733467014316!5m2!1sen!2sin" 
-                width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <iframe class="contact-us"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3887.6000537676073!2d77.68607057418862!3d12.997413114313682!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae16837f54dbc9%3A0xbed84d37fcf010ca!2sImpelsys!5e0!3m2!1sen!2sin!4v1733467014316!5m2!1sen!2sin"
+                width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
         </section>
         <section class="container-right">
             <article class="form">
                 <form action="https://localhost/link.php" method="post" name="form1">
                     <div class="mb-3">
                         <label for="exampleFormControlName1" class="form-label">Full Name</label>
-                        <input type="text" class="form-control" id="exampleFormControlName1" placeholder="Enter Your Name">
-                      </div>
+                        <input type="text" class="form-control" id="exampleFormControlName1"
+                            placeholder="Enter Your Name">
+                    </div>
                     <div class="mb-3">
                         <label for="exampleFormControlInput1" class="form-label">Email address</label>
-                        <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Enter Your Email">
-                      </div>
-                      <div class="mb-3">
+                        <input type="email" class="form-control" id="exampleFormControlInput1"
+                            placeholder="Enter Your Email">
+                    </div>
+                    <div class="mb-3">
                         <label for="exampleFormControlTextarea1" class="form-label">Message</label>
-                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Enter Your Message"></textarea>
-                      </div>
+                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"
+                            placeholder="Enter Your Message"></textarea>
+                    </div>
                     <article class="field-1">
                         <input type="submit" value="Submit">
+                        <button type="button" class="address" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                            Get Address
+                        </button>
                     </article>
+
+                    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                        aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h1 class="modal-title fs-5" id="exampleModalLabel">Address</h1>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    Impelsys, Survey No. 192, IWF Campus, B Narayanpura, Mahadevpura, Bengaluru, Karnataka - 560016
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary"
+                                        data-bs-dismiss="modal">Close</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </form>
             </article>
         </section>
@@ -48,6 +76,15 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
         integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
         crossorigin="anonymous"></script>
+
+    <script>
+        const myModal = document.getElementById('myModal')
+        const myInput = document.getElementById('myInput')
+
+        myModal.addEventListener('shown.bs.modal', () => {
+            myInput.focus()
+        })
+    </script>
 </body>
 
 </html>

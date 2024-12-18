@@ -74,7 +74,7 @@ textarea:focus {
     box-shadow: 0 0 5px rgba(37, 149, 190, 0.5);
 }
 
-input[type="submit"] {
+input[type="submit"], .address {
     background-color: #2596be;
     color: white;
     border: none;
@@ -86,7 +86,7 @@ input[type="submit"] {
     transition: all 0.3s ease;
 }
 
-input[type="submit"]:hover {
+input[type="submit"]:hover, .address {
     background-color: #00658a;
     transform: scale(1.02);
 }

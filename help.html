@@ -1,16 +1,130 @@
-<!DOCTYPE html>
-<html>
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Live Virtual Class</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" 
+    crossorigin="anonymous">
 
-    <head>
-        <title>Live Virtual Class</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            overflow-x: hidden;
+        }
 
-        <!-- <link rel="stylesheet" href="./css/style1.css"> -->
+        body::-webkit-scrollbar{
+            overflow-x: scroll;
+        }
 
-    </head>
+        .help-head {
+            height: 25vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #2596be;
+            color: white;
+            text-shadow: 2px 2px #00658a;
+        }
 
-    <body>
+        .help-head h1 {
+            font-size: 2.5rem;
+            font-weight: bold;
+        }
+        .main-div{
+            background-color: #f4f9fd;
+        }
+        .right-div{
+            background-color: #2596be;
+        }
+    </style>
 
+  </head>
+  <body>
+
+    <header class="help-head">
         <h1>Help</h1>
-    </body>
+    </header>
+
+    <nav class="navbar bg-body-tertiary">
+        <div class="container-fluid d-flex justify-content-center">
+          <span class="navbar-text">
+            Navbar text with an inline element
+          </span>
+        </div>
+      </nav>
+
+    <div class="container mt-3">
+        <div class="row">
+            <div class="col-md-2 left-div p-3">
+                <div class="custom-left-div">
+                    <ul class="list-group">
+                        <li class="list-group-item active" aria-current="true">FAQ Topics</li>
+                        <li class="list-group-item" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="right" data-bs-content="Right popover">First Question</li>
+                        <li class="list-group-item" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="right" data-bs-content="Right popover">Second Question</li>
+                        <li class="list-group-item" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="right" data-bs-content="Right popover">Third Question</li>
+                        <li class="list-group-item" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="right" data-bs-content="Right popover">Fourth Question</li>
+                        <li class="list-group-item" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="right" data-bs-content="Right popover">Fifth Question</li>
+                        <li class="list-group-item" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="right" data-bs-content="Right popover">Sixth Question</li>
+                      </ul>
+                </div>
+            </div>
+            <div class="col-md-8 main-div p-3">
+                <div class="custom-middle-div">
+                    <div class="accordion" id="accordionExample">
+                        <div class="accordion-item">
+                          <h2 class="accordion-header" id="headingOne">
+                            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                              Accordion Item #1
+                            </button>
+                          </h2>
+                          <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                              <strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                            </div>
+                          </div>
+                        </div>
+                        <div class="accordion-item">
+                          <h2 class="accordion-header" id="headingTwo">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                              Accordion Item #2
+                            </button>
+                          </h2>
+                          <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                              <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                            </div>
+                          </div>
+                        </div>
+                        <div class="accordion-item">
+                          <h2 class="accordion-header" id="headingThree">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                              Accordion Item #3
+                            </button>
+                          </h2>
+                          <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                              <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                </div>
+            </div>
+            <div class="col-md-2 right-div p-3">
+                <div class="custom-right-div">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto voluptatem excepturi quae molestias tempora culpa rem nostrum. Voluptas dolore magni corrupti, eaque eius magnam, recusandae, fugiat quae autem pariatur culpa? Libero velit officia cumque, quod, laborum recusandae eum error ea perspiciatis doloremque a, consectetur ab placeat eius quam sunt unde atque quisquam similique. Eligendi ex officia quae deleniti adipisci laborum magnam praesentium iure et ipsum eum voluptates doloremque porro, pariatur alias eveniet!
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script>
+        const popoverTriggerList = document.querySelectorAll('[data-bs-toggle="popover"]')
+        const popoverList = [...popoverTriggerList].map(popoverTriggerEl => new bootstrap.Popover(popoverTriggerEl))
+    </script>
+  </body>
 </html>
