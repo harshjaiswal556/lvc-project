@@ -72,8 +72,30 @@ nav {
     text-align: justify;
     font-size: 1rem;
     color: #555;
-    
     font-weight: 400;
+}
+
+.left .scholarship{
+  background-color: #00658a;
+  border: 1px solid #004c6c;
+  font-weight: 700;
+  padding: 10px 20px;
+  margin-top: 2rem;
+}
+
+.left .scholarship:hover{
+  background-color: #fff;
+  border: 1px solid #004c6c;
+  font-weight: 700;
+  color: #004c6c;
+}
+
+.left .scholarship{
+  color: #fff;
+}
+
+.left .scholarship:hover{
+  color: #004c6c;
 }
 
 .right video {
