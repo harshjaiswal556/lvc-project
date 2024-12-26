@@ -13,14 +13,17 @@
 
         <script>
           function submitForm(){
-            var name = form1.name.value;
-            var email = form1.email.value;
-
+            // var name = form1.name.value;
+            // var email = form1.email.value;
+var name = document.getElementById("name").value;
+var email = document.getElementById("email").value;
             if(name==""){
               alert("Please enter your name")
+              return false;
             }
             else if(email==""){
               alert("Please enter your email")
+              return false;
             }else{
               alert("Your name is " + name + " and email ID is " + email)
               return true;
@@ -87,11 +90,11 @@
             <form onsubmit="return submitForm()" name="form1" action="thanks.html">
                 <div class="mb-3">
                     <label for="exampleFormControlName1" class="form-label">Name</label>
-                    <input type="text" name="name" class="form-control" id="exampleFormControlName1" placeholder="Enter Your Name">
+                    <input type="text" id="name" name="name" class="form-control" id="exampleFormControlName1" placeholder="Enter Your Name">
                 </div>
                 <div class="mb-3">
                     <label for="exampleFormControlInput1" class="form-label">Email address</label>
-                    <input type="email" name="email" class="form-control" id="exampleFormControlInput1"
+                    <input type="email" id="email" name="email" class="form-control" id="exampleFormControlInput1"
                         placeholder="Enter Your Email">
                 </div>
                 <article class="field-1">

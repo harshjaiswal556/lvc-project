@@ -18,11 +18,14 @@
 
             if(name==""){
               alert("Please enter your name")
+              return false;
             }
             else if(email==""){
               alert("Please enter your email")
+              return false;
             }else if(message==""){
               alert("Please enter your message")
+              return false;
             }else{
               alert("Your name is " + name + " and email ID is " + email)
               return true;
