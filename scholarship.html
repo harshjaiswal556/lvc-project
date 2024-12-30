@@ -40,6 +40,54 @@
             // alert(`Hi ${name}, your percentage is ${percentage} and, 10th grade is ${tenth}`)
             document.getElementById("amount").innerHTML = "Total amount to be paid: "+scholarship;
         }
+
+        function fname(){
+          var name = document.getElementsByName("name")[0].value
+            if(name===""){
+              alert("Enter name")
+              form1.name.focus();
+              form1.name.value = " "
+              return false;
+            }
+        }
+
+        function Marks1(){
+          var marks1 = document.getElementById("marks1").value
+            if(marks1===""){
+              alert("Enter marks in between 0-100")
+              form1.marks1.focus();
+              form1.marks1.value = 0
+              return false;
+            }
+        }
+        function Marks2(){
+          var marks2 = document.getElementById("marks2").value
+            if(marks2===""){
+              alert("Enter marks in between 0-100")
+              form1.marks2.focus();
+              form1.marks2.value = 0
+              return false;
+            }
+        }
+        function Marks3(){
+          var marks3 = document.getElementById("marks3").value
+            if(marks3===""){
+              alert("Enter marks in between 0-100")
+              form1.marks3.focus();
+              form1.marks3.value = 0
+              return false;
+            }
+        }
+        function Marks4(){
+          var marks4 = document.getElementById("marks4").value
+            if(marks4===""){
+              alert("Enter marks in between 0-100")
+              form1.marks4.focus();
+              form1.marks4.value = 0
+              return false;
+            }
+        }
+
     </script>
 
     <style>
@@ -121,27 +169,27 @@
                 <h1>LVC total fees is RS.1,00,000</h1>
                 <div class="mb-3">
                     <label for="exampleFormControlName1" class="form-label">Name</label>
-                    <input type="text" class="form-control" name="name" id="exampleFormControlName1"
+                    <input type="text" class="form-control" name="name" id="exampleFormControlName1" onblur="fname()"
                         placeholder="Enter Your Name" required>
                 </div>
                 <div class="mb-3">
                     <label for="exampleFormControlInput1" class="form-label">Marks in Maths</label>
-                    <input type="number" id="marks1" class="form-control" id="exampleFormControlInput1"
+                    <input type="number" id="marks1" class="form-control" id="exampleFormControlInput1" onblur="Marks1()"
                         placeholder="Enter Your Maths Marks" required>
                 </div>
                 <div class="mb-3">
                     <label for="exampleFormControlInput1" class="form-label">Marks in English</label>
-                    <input type="number" id="marks2" class="form-control" id="exampleFormControlInput1"
+                    <input type="number" id="marks2" class="form-control" id="exampleFormControlInput1" onblur="Marks2()"
                         placeholder="Enter Your English Marks" required>
                 </div>
                 <div class="mb-3">
                     <label for="exampleFormControlInput1" class="form-label">Marks in Science</label>
-                    <input type="number" id="marks3" class="form-control" id="exampleFormControlInput1"
+                    <input type="number" id="marks3" class="form-control" id="exampleFormControlInput1"onblur="Marks3()"
                         placeholder="Enter Your English Marks" required>
                 </div>
                 <div class="mb-3">
                     <label for="exampleFormControlInput1" class="form-label">Marks in Computer</label>
-                    <input type="number" id="marks4" class="form-control" id="exampleFormControlInput1"
+                    <input type="number" id="marks4" class="form-control" id="exampleFormControlInput1" onblur="Marks4()"
                         placeholder="Enter Your English Marks" required>
                 </div>
                 <div class="mb-3">
